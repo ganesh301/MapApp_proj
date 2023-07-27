@@ -23,8 +23,37 @@ const App = () => {
   };
 
   const handleLoadButtonClick = () => {
-    // Implement your logic here to load region data and update the map.
-    // Use libraries like turfjs and osmtogeojson to process the map data.
+    const regionData = {
+      'United States': {
+        currency: 'USD',
+        speedUnit: 'mph',
+        distanceUnit: 'miles',
+        volumeUnit: 'gallons',
+        timezone: 'UTC-5 to UTC-10',
+      },
+      India: {
+        currency: 'INR',
+        speedUnit: 'kmph',
+        distanceUnit: 'kilometers',
+        volumeUnit: 'liters',
+        timezone: 'UTC+5:30',
+      },
+      'United Kingdom': {
+        currency: 'GBP',
+        speedUnit: 'mph',
+        distanceUnit: 'miles',
+        volumeUnit: 'liters',
+        timezone: 'UTC+0 to UTC+1',
+      },
+    };
+
+ 
+    const selectedRegion = regionInfo;
+
+   
+    if (selectedRegion && regionData[selectedRegion]) {
+      dispatch(setRegionInfo(regionData[selectedRegion]));
+    }
   };
 
   return (
@@ -50,4 +79,3 @@ const App = () => {
 };
 
 export default App;
-
