@@ -1,0 +1,11 @@
+.Head{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+   
+}

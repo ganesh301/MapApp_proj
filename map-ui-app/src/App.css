@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+/* Header */
+
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-actions {
+  margin-left: auto;
+}
+
+.user-actions button {
+  margin-left: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #444;
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  overflow: auto;
+  transition: width 0.2s;
+}
+
+
+.sidebar.collapsed  {
+  width: 5%; 
+ 
+}
+.sidebar .ant-menu {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Content Area */
+.app-container {
+   margin-left: 12%;
+ 
+}
+
+/* Footer */
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+}
